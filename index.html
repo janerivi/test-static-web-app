@@ -20,4 +20,13 @@ Pirate Round league spanker lugger skysail grapple spyglass boom sutler bilged o
   </main>
 </body>
 
+<script>
+(async function(){
+  let { text } = await (await fetch ('/api/GetName')).json();
+  document.querySelector('#name').textContent = text;
+
+}())
+
+</script>
+
 </html>
